@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://fonts/symbolfont.tres" type="DynamicFont" id=1]
+
+[node name="CharacterViewer" type="Node"]
+
+[node name="Spatial" type="Spatial" parent="."]
+
+[node name="Camera" type="Camera" parent="Spatial"]
+
+[node name="GUI" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GUI"]
+anchor_right = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button1" type="Button" parent="GUI/HBoxContainer"]
+margin_right = 28.0
+margin_bottom = 28.0
+rect_min_size = Vector2( 28, 28 )
+custom_fonts/font = ExtResource( 1 )
+text = ""
+align = 0
+
+[node name="Button2" type="Button" parent="GUI/HBoxContainer"]
+margin_left = 32.0
+margin_right = 60.0
+margin_bottom = 28.0
+rect_min_size = Vector2( 28, 28 )
+custom_fonts/font = ExtResource( 1 )
+text = ""
+align = 0
+
+[node name="Button3" type="Button" parent="GUI/HBoxContainer"]
+margin_left = 64.0
+margin_right = 92.0
+margin_bottom = 28.0
+rect_min_size = Vector2( 28, 28 )
+custom_fonts/font = ExtResource( 1 )
+text = ""
+align = 0
